@@ -48,15 +48,15 @@ function showError() {
 // Evento al hacer clic en el botón de encriptar
 document.getElementById("encryptButton").addEventListener("click", function () {
   var inputText = document.getElementById("inputText");
-  if (inputText.value.trim() === "") {
-    showError();
-    return;
+  if (inputText.value.trim() === '') {
+      alert('Debes introducir texto para encriptar.');
+      return;
   }
   var encryptedText = btoa(inputText.value);
   showLottie();
   setTimeout(function () {
-    document.getElementById("outputText").value = encryptedText;
-    inputText.value = "";
+      document.getElementById("outputText").value = encryptedText;
+      inputText.value = "";
   }, 3000);
 });
 
