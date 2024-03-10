@@ -118,5 +118,5 @@ document.addEventListener("DOMContentLoaded", function() {
 window.onload = function() {
   setTimeout(function() {
     document.getElementById('thankYouButton').style.display = 'block';
-  }, 10000); 
+  }, 50000); // 50000 milisegundos equivalen a 50 segundos
 };
